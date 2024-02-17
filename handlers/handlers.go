@@ -14,7 +14,7 @@ import (
 func EncryptFile(file string, key string) error {
 	// Check if file name was provided
 	if len(file) == 0 {
-		return fmt.Errorf("file parameter is required")
+		return fmt.Errorf("-f flag is required (file)")
 	}
 
 	// Check if key file was provided, if not generate a new one
@@ -77,12 +77,12 @@ func EncryptFile(file string, key string) error {
 func DecryptFile(file string, key string) error {
 	// Check if file name was provided
 	if len(file) == 0 {
-		return fmt.Errorf("file parameter is required")
+		return fmt.Errorf("-f flag is required (file)")
 	}
 
 	// Check if key file was provided
 	if len(key) == 0 {
-		return fmt.Errorf("key parameter is required")
+		return fmt.Errorf("-k flag is required (key)")
 	}
 
 	// Read the encrypted file data into a variable
