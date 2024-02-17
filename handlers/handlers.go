@@ -4,10 +4,11 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-	"encrypto/utils"
 	"fmt"
 	"io"
 	"io/ioutil"
+
+	"github.com/ciameksw/encrypto/utils"
 )
 
 func EncryptFile(file string, key string) error {

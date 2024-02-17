@@ -1,10 +1,11 @@
 package main
 
 import (
-	"encrypto/handlers"
 	"flag"
 	"fmt"
 	"os"
+
+	"github.com/ciameksw/encrypto/handlers"
 )
 
 func main() {
